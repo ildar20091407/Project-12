@@ -268,33 +268,70 @@ flex-direction: column;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 300;
-        width: 100%;
-    animation: fillProgressBar 1s ease forwards;
+    animation: fillProgressBar 2s ease forwards;
         &_text{
+
+            size: 400;
+            font-size: 20px;
             color: var(--text-color);
         }
         &_number{
             border: 3px, solid var(--accent-color);
             border-radius: 20px;
-            width: 300px;
+            max-width: 300px;
+            width: 100%;
+            height: 30px;
+            max-width: 300px;
+            width: 100%;
             height: 30px;
         }
         &_color1{
             margin:  0px;
+            size: 400;
+            font-size: 20px;
             border-radius: 20px ;
             display: flex;
-        justify-content: center;
-        align-items: center;
-        background: var(--accent-color);
-        width: 250px;
-        height: 100%;
-        color: #fff;
-    }
+            justify-content: center;
+            align-items: center;
+            background: var(--accent-color);
+            padding-left: 50px;
+            padding-right: 50px;
+            height: 100%;
+            color: #fff;
+        }
         &_color2{
-            margin:  0px;
-            border-radius: 20px ;
-            display: flex;
+        size: 400;
+        font-size: 20px;
+        margin:  0px;
+        border-radius: 20px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--accent-color);
+        width: 50px;
+        height: 100%;
+        color: #fff;
+    }
+    &_color3{
+        size: 400;
+        font-size: 20px;
+        margin:  0px;
+        border-radius: 20px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--accent-color);
+        padding-left: 75px;
+        padding-right: 75px;
+        height: 100%;
+        color: #fff;
+    }
+    &_color4{
+        size: 400;
+        font-size: 20px;
+        margin:  0px;
+        border-radius: 20px ;
+        display: flex;
         justify-content: center;
         align-items: center;
         background: var(--accent-color);
@@ -302,36 +339,15 @@ flex-direction: column;
         height: 100%;
         color: #fff;
     }
-        &_color3{
-            margin:  0px;
-            border-radius: 20px ;
-            display: flex;
+    &_color5{
+        size: 400;
+        font-size: 20px;
+        margin:  0px;
+        border-radius: 20px ;
+        display: flex;
         justify-content: center;
         align-items: center;
         background: var(--accent-color);
-        width: 150px;
-        height: 100%;
-        color: #fff;
-    }
-        &_color4{
-            margin:  0px;
-            border-radius: 20px ;
-            display: flex;
-        justify-content: center;
-        align-items: center;
-        background: var(--accent-color);
-        width: 200px;
-        height: 100%;
-        color: #fff;
-    }
-        &_color5{
-            margin:  0px;
-            border-radius: 20px ;
-            display: flex;
-        justify-content: center;
-        align-items: center;
-        background: var(--accent-color);
-        width: 170px;
         height: 100%;
         color: #fff;
     }
@@ -348,27 +364,41 @@ flex-direction: column;
 /* Классы для установки ширины каждого progress-bar, а также сброс анимации */
 .footer__main_item_color1 {
     width: 45%; /* Задаем конечную ширину в процентах */
-    animation-delay: 0.5s;
+
 }
 
 .footer__main_item_color2 {
     width: 70%;
-    animation-delay: 0.5s;
+
 }
 
 .footer__main_item_color3 {
     width: 30%;
-    animation-delay: 0.5s;
+
 }
 
 .footer__main_item_color4 {
     width: 85%;
-    animation-delay: 0.5s;
+
 }
 
 .footer__main_item_color5 {
     width: 60%;
-    animation-delay: 0.5s;
+
+}
+
+
+/* Home.module.scss */
+.footer {
+  /* Стили для footer по умолчанию */
+  opacity: 0; /* Скрываем элемент */
+  transform: translateY(20px); /* Сдвигаем вниз */
+  transition: all 0.5s ease-in-out; /* Плавный переход */
+}
+
+.footerVisible {
+  opacity: 1; /* Показываем элемент */
+  transform: translateY(0); /* Возвращаем на место */
 }
 
 
